@@ -21,7 +21,7 @@ function splitSentence(sentence) {
 // Desafio 4
 function concatName(frase) {
   let fraseFinal = '';
-  fraseFinal = frase[frase.length - 1] + ", " + frase[0];
+  fraseFinal = frase[frase.length - 1] + ', ' + frase[0];
   return fraseFinal;
 }
 
@@ -43,8 +43,8 @@ function highestCount(numeros) {
       maiorNumero = numeros[i + 1];
     }
   }
-  for (let index = 0; index < numeros.length; index += 1){
-    if (numeros[index] === maiorNumero){
+  for (let index = 0; index < numeros.length; index += 1) {
+    if (numeros[index] === maiorNumero) {
       repeticoesMaiorNumero += 1;
     }
   }
@@ -55,7 +55,7 @@ function highestCount(numeros) {
 function catAndMouse(mouse, cat1, cat2) {
   let distanceCat1 = mouse - cat1;
   let distanceCat2 = mouse - cat2;
-  if(distanceCat1 > distanceCat2){
+  if (distanceCat1 > distanceCat2) {
     return 'cat2';
   } else if (distanceCat2 > distanceCat1) {
     return 'cat1';
