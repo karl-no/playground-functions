@@ -68,14 +68,14 @@ function catAndMouse(mouse, cat1, cat2) {
 function fizzBuzz(numerosFizzBuzz) {
   let arrayFinal = [];
   for (let i = 0; i < numerosFizzBuzz.length; i += 1) {
-    if (numerosFizzBuzz[i] % 15 === 0) {
-      arrayFinal.push("fizzbuzz");
+    if (numerosFizzBuzz[i] % 3 === 0 && numerosFizzBuzz[i] % 5 === 0) {
+      arrayFinal.push('fizzbuzz');
     } else if (numerosFizzBuzz[i] % 3 === 0) {
-      arrayFinal.push("fizz");
+      arrayFinal.push('fizz');
     } else if (numerosFizzBuzz[i] % 5 === 0) {
-      arrayFinal.push("buzz");
+      arrayFinal.push('buzz');
     } else {
-      arrayFinal.push("bug!");
+      arrayFinal.push('bug!');
     }
   }
   return arrayFinal;
