@@ -6,6 +6,7 @@ function compareTrue(a, b) {
     return false;
   }
 }
+console.log(compareTrue(true, true));
 
 // Desafio 2
 function calcArea(base, height) {
@@ -14,19 +15,28 @@ function calcArea(base, height) {
 
 // Desafio 3
 function splitSentence(sentence) {
-  
+  let splitFrase = sentence.split(/[\s,]+/);
+  return splitFrase;
 }
 
 // Desafio 4
-function concatName(words[]) {
-  
-  // for (let key in words) {
-  //   return words.
+function concatName() {
+
+  // let nomesSeparados = [];
+
+  // for (let key in nomes) {
+
   // }
+
+  // for (let i = 0; i < nomes.length; i += 1) {
+  //   nomesSeparados.push(nomes);
+  // }
+
+  // return nomesSeparados[nomesSeparados.length - 1] + ', ' + nomesSeparados[0];
 
 }
 
-console.log(concatName('Lucas', 'Cassiano', 'Ferraz', 'Paolillo'));
+// console.log(concatName('Lucas', 'Cassiano', 'Ferraz', 'Paolillo'));
 
 // Desafio 5
 function footballPoints() {
