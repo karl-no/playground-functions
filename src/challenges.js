@@ -6,7 +6,6 @@ function compareTrue(a, b) {
     return false;
   }
 }
-console.log(compareTrue(true, true));
 
 // Desafio 2
 function calcArea(base, height) {
@@ -36,8 +35,20 @@ function footballPoints(wins, ties) {
 }
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
+function highestCount(numeros) {
+  let repeticoesMaiorNumero = 0;
+  let maiorNumero = numeros[0];
+  for (let i = 1; i < numeros.length; i += 1) {
+    if (numeros[i] > maiorNumero) {
+      maiorNumero = numeros[i + 1];
+    }
+  }
+  for (let index = 0; index < numeros.length; index += 1){
+    if (numeros[index] === maiorNumero){
+      repeticoesMaiorNumero += 1;
+    }
+  }
+  return repeticoesMaiorNumero;
 }
 
 // Desafio 7
