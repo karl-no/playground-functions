@@ -20,11 +20,11 @@ function splitSentence(sentence) {
 }
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(frase) {
+  let fraseFinal = '';
+  fraseFinal = frase[frase.length - 1] + ", " + frase[0];
+  return fraseFinal;
 }
-
-// console.log(concatName('Lucas', 'Cassiano', 'Ferraz', 'Paolillo'));
 
 // Desafio 5
 function footballPoints(wins, ties) {
