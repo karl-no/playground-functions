@@ -53,20 +53,20 @@ function highestCount(numeros) {
   return repeticoesMaiorNumero;
 }
 
-console.log(highestCount([-2, -2, -1]));
-
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
-  let distanceCat1 = mouse - cat1;
-  let distanceCat2 = mouse - cat2;
-  if (distanceCat1 > distanceCat2) {
-    return 'cat2';
-  } else if (distanceCat2 > distanceCat1) {
+  let distanceCat1 = cat1 - mouse;
+  let distanceCat2 = cat2 - mouse;
+  if (Math.abs(distanceCat1) < Math.abs(distanceCat2)) {
     return 'cat1';
-  } else if (distanceCat1 === distanceCat2){
+  } else if (Math.abs(distanceCat2) < Math.abs(distanceCat1)) {
+    return 'cat2';
+  } else if (Math.abs(distanceCat1) == Math.abs(distanceCat2)){
     return 'os gatos trombam e o rato foge';
   }
 }
+
+console.log(catAndMouse(0, 3, 2));
 
 // Desafio 8
 function fizzBuzz(numerosFizzBuzz) {
