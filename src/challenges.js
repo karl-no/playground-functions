@@ -46,10 +46,14 @@ function highestCount(numeros) {
   for (let index = 0; index < numeros.length; index += 1) {
     if (numeros[index] === maiorNumero) {
       repeticoesMaiorNumero += 1;
+    } else if (numeros[index] < 0) {
+      repeticoesMaiorNumero = 1;
     }
   }
   return repeticoesMaiorNumero;
 }
+
+console.log(highestCount([-2, -2, -1]));
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
